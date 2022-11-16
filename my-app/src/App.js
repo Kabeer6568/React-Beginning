@@ -1,28 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-// import Home from './components/Home'
+// import logo from './logo.svg';
+// import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Array from './components/Array';
+import NestedArray from './components/NestedArray'
+import Question from './components/Question'
+import Api1 from './components/Api1'
+// import car from "./assets/images/car.jpg"
 
 function App() {
+
+  const name1 = "Hello World"
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+      My first Const {name1}
+      
+      <Header />
+      
+
+      <Array/>
+
+      <NestedArray/>
+      
+      <Question/>
+
+      
+          
+   </>
   );
 }
-
-
 
 export default App;
